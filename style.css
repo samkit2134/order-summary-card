@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+  text-align: center;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.text-container {
+  padding: 7%;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.text-container > p {
+  color: #3a11a2;
+  margin-bottom: 20px;
+}
+.pricing {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 30px;
+}
+.pricing a:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  transition: color 0.3s ease;
+}
+.plan-box-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+  color: hsl(223, 47%, 23%);
+}
+.plan-box-left div {
+  margin-left: 20px;
+}
+.plan-box-left div h5 {
+  font-weight: 900;
+}
+.pricing a {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+a.proceed-btn {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: hsl(223, 47%, 23%);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+a.proceed-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+  transition: background-color 0.3s ease;
+}
+a.cancelorder-btn {
+  display: block;
+  text-decoration: none;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .container {
+    max-width: 85%;
+    background-color: pink;
+  }
+  .text-container > h1 {
+    font-size: 23px;
+  }
+  .pricing {
+    padding: 12px;
+  }
+  .plan-box-left div {
+    margin-left: 10px;
+  }
+  a.proceed-btn {
+    font-size: 12px;
+    margin: 20px;
+  }
+  a.cancelorder {
+    font-size: 12px;
+    margin: 20px;
+  }
+}
